@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.vanard.tutorial.loginapp.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_email"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:id="@+id/tx1"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx1"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_password"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:id="@+id/tx2"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx2"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_bn_label"
+            style="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="35dp"
+            android:id="@+id/login_btn"
+            android:background="@drawable/button_selecter"
+            android:textColor="@color/textColor"
+            android:onClick="login"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_txt"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/sign_up"
+            android:onClick="signUp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

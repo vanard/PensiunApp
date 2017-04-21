@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pensiunap</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login_bn_label">Login</string>
+    <string name="sign_up_txt">New User? Sign Up</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_con_password">Re-type Password</string>
+    <string name="reg_bn_label">Register</string>
+</resources>
