@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context="com.vanard.tutorial.loginapp.LoginActivity">
 
@@ -19,12 +18,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp">
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/prompt_email"
-            android:textColor="@color/textColor"
             android:textSize="18dp"
             android:id="@+id/tx1"
             android:layout_alignParentLeft="true"/>
@@ -34,14 +32,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tx1"
             android:id="@+id/email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/textColor"/>
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/prompt_password"
-            android:textColor="@color/textColor"
             android:textSize="18dp"
             android:id="@+id/tx2"
             android:layout_alignParentLeft="true"
@@ -52,8 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tx2"
             android:id="@+id/password"
-            android:inputType="textPassword"
-            android:textColor="@color/textColor"/>
+            android:inputType="textPassword" />
 
         <Button
             android:layout_width="match_parent"
@@ -79,7 +74,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up_txt"
-            android:textColor="@color/textColor"
             android:textSize="18dp"
             android:gravity="center"
             android:layout_alignParentBottom="true"

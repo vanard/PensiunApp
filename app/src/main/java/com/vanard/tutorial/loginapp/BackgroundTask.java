@@ -33,8 +33,8 @@ import java.net.URLEncoder;
  */
 
 public class BackgroundTask extends AsyncTask<String,Void,String> {
-    String register_url = "http://192.168.0.100:8012/loginapp/register.php";
-    String login_url = "http://192.168.0.100:8012/loginapp/login.php";
+    String register_url = "http://192.168.0.100:8012/loginapp/loginapp/register.php";
+    String login_url = "http://192.168.0.100:8012/loginapp/loginapp/login.php";
     Context ctx;
     ProgressDialog progressDialog;
     Activity activity;
@@ -89,7 +89,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
 
                 httpURLConnection.disconnect();
-                Thread.sleep(5000);
+                Thread.sleep(3000);
                 return stringBuilder.toString().trim();
 
             }catch (MalformedURLException e){
@@ -128,7 +128,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
 
                 httpURLConnection.disconnect();
-                Thread.sleep(5000);
+                Thread.sleep(3000);
                 Log.d("Test", "Test 3 Pass");
                 return stringBuilder.toString().trim();
 

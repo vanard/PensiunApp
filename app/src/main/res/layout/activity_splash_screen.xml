@@ -9,9 +9,9 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="3000dp"
+            android:layout_width="wrap_content"
             android:layout_height="400dp"
-            android:src="@drawable/logo_mini"
+            android:src="@drawable/logo"
             android:layout_centerHorizontal="true"/>
 
         <ProgressBar
